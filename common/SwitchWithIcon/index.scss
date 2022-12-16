@@ -1,0 +1,88 @@
+.switch_with_icon {
+  position: relative;
+  display: inline-block;
+  width: 52px;
+  height: 30px;
+
+  & input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    &:checked + .switch_with_icon-slider {
+      background-color: #20315f;
+    }
+
+    &:checked + .switch_with_icon-slider:before {
+      background: url('./../../../images/icons/switch-checked.svg') #ffffff
+        no-repeat;
+      background-position: center center;
+      transform: translateX(22px);
+      -webkit-transform: translateX(22px);
+      -moz-transform: translateX(22px);
+      -ms-transform: translateX(22px);
+      -o-transform: translateX(22px);
+    }
+  }
+
+  &-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eef2f3;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    border-radius: 34px;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 22px;
+      width: 22px;
+      left: 4px;
+      bottom: 4px;
+      transition: transform 0.3s;
+      background: url('./../../../images/icons/switch-close.svg') #b9b3b3
+        no-repeat;
+      background-position: center center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      -webkit-transition: transform 0.3s;
+      -moz-transition: transform 0.3s;
+      -ms-transition: transform 0.3s;
+      -o-transition: transform 0.3s;
+    }
+  }
+}
+
+.label_text {
+  // min-width: 15vw;
+  position: absolute;
+  cursor: pointer;
+  top: 0px;
+  left: 60px;
+  color: #20315f;
+  font-size: 1.9vmin;
+  font-weight: 500;
+  white-space: pre;
+  font-size: 21px;
+  line-height: 30px;
+
+  @media screen and (max-width: 1250px) {
+    font-size: 1.6vmin;
+    transition: font-size 0.5s;
+    -webkit-transition: font-size 0.5s;
+    -moz-transition: font-size 0.5s;
+    -ms-transition: font-size 0.5s;
+    -o-transition: font-size 0.5s;
+  }
+}

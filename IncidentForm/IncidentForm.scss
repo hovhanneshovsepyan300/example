@@ -1,0 +1,190 @@
+.IncidentForm {
+  position: absolute;
+  height: calc(100%); // use variable
+  background: white;
+  z-index: $z-backmid;
+  transition: all 0.4s;
+  overflow-y: scroll;
+  color: $color-black;
+  width: 100%;
+  padding: 16px;
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $color-blue;
+    margin: 0 10px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    h3 {
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 32px;
+      color: $color-blue;
+      margin-left: 10px;
+    }
+  }
+  &__empty {
+    padding: 20px 30px;
+  }
+  &__header {
+    margin: 20px 10px;
+    padding: 20px 10px;
+    border: 1px solid #f1f0f0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 30px;
+      color: $color-blue;
+    }
+
+    select {
+      min-width: 300px;
+      color: $color-black;
+      line-height: 34px;
+      font-size: 16px;
+      background-color: #fff;
+      border-radius: 20px;
+      height: 45px;
+      margin-bottom: $margin-sm;
+      border: 1px solid #f0f0f0;
+      padding-left: 30px;
+      text-indent: 10px;
+      margin-left: $margin-sm;
+    }
+    & h1 {
+      margin: 0px;
+      padding: 0px;
+      margin-bottom: 10px;
+    }
+  }
+  &__content {
+    margin: 15px 10px;
+    //background-color: #f0f0f0;
+
+    & h3 {
+      border-top: 1px solid $color-blue;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 32px;
+      color: $color-blue;
+    }
+
+    & > div {
+      margin-bottom: 40px;
+      border-bottom: 10px solid white;
+    }
+
+    &__title {
+      color: $color-black;
+      margin-bottom: $margin-md;
+      p {
+        font-size: 14px;
+        line-height: 21px;
+        color: #525257;
+      }
+    }
+  }
+  &__dropDownContainer {
+    align-items: center;
+    width: 96%;
+    position: relative;
+    border-bottom: 1px solid #20315f;
+  }
+
+  &__dropDownListContainer {
+    position: absolute;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    z-index: 99;
+  }
+
+  &__dropDownList {
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 15px 15px;
+    padding: 10px 5px;
+    align-items: center;
+    overflow-y: scroll;
+    height: 360px;
+    &::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+      border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $color-light-background;
+      outline: 1px solid #fbfbfb;
+      border-radius: 30px;
+    }
+
+    li {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 34px;
+      padding: 0 10px;
+      margin-top: 5px;
+      &:hover {
+        background: #eef2f3;
+        border-radius: 30px;
+      }
+      p {
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color: $color-blue;
+      }
+    }
+  }
+  &__dropDownButton {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: none;
+    padding: 18px 10px;
+    background: $color-light-background;
+    border-radius: 8px 8px 0px 0px;
+    .arrow-icon {
+      justify-content: flex-end;
+      &__rotate {
+        transform: rotate(180deg);
+      }
+    }
+    div {
+      display: flex;
+      width: 100%;
+
+      h4 {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color: $color-blue;
+        margin-left: 10px;
+        text-align: left;
+      }
+    }
+  }
+  &__submitButtonContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    button {
+      border-radius: 30px;
+    }
+  }
+}

@@ -1,0 +1,273 @@
+.admin-dialog-document {
+  min-width: 850px;
+  width: auto;
+
+  .admin-form {
+    margin: 0;
+    padding: 0;
+
+    &__row {
+      width: 100%;
+      // margin-left: 20px;
+      // margin-right: 20px;
+
+      .admin-form__column {
+        gap: 20px;
+      }
+    }
+
+    .checkbox {
+      padding-left: 80px;
+      padding-top: 20px;
+      color: #a4acb5;
+
+      .list {
+        margin-top: 0px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .item {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 15px;
+
+          label {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .right-control {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      .date {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        .label {
+          margin-top: 8px;
+        }
+
+        .admin-field {
+          width: 150px;
+
+          .icon {
+            top: 7px;
+            right: 4px;
+          }
+        }
+      }
+
+      .mandatory {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 70px;
+      }
+
+      .button {
+        margin-top: 20px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+
+        .upload-file-wrap {
+          background-color: red;
+          &--primary {
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+.admin-dialog-document {
+  overflow-x: hidden;
+
+  .admin-dialog-footer-button {
+    padding: 7px 15px;
+    .button {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 16px;
+    }
+  }
+  .admin-dialog-wrapper {
+    .event-list {
+      margin-top: 24px;
+    }
+
+    padding: 15px;
+    .admin-dialog-top-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      span {
+        svg {
+          width: 24px;
+          height: 24px;
+          path {
+          }
+        }
+      }
+      .admin-head {
+        width: 100%;
+      }
+    }
+    .right-control {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-top: 1px solid #f1f0f0;
+      border-bottom: 1px solid #f1f0f0;
+      padding: 22px 0px;
+      .mandatory {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        label {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 32px;
+
+          color: #20315f;
+        }
+      }
+    }
+    .admin-title {
+      &__heading {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+
+        color: #20315f;
+      }
+    }
+
+    .admin-form {
+      display: flex;
+      overflow: hidden;
+      input {
+        height: 34px;
+      }
+
+      .checkbox {
+        padding-left: 14px;
+        padding-top: 0px;
+        color: #a4acb5;
+        &__title {
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          padding-bottom: 10px;
+          line-height: 21px;
+
+          color: #20315f;
+        }
+
+        .admin-switch {
+          margin: 0;
+          align-items: center;
+          display: flex;
+        }
+      }
+
+      .admin-field {
+        background: #eef2f3;
+        border-radius: 8px 8px 0px 0px;
+        border-bottom: 1px solid #20315f;
+        padding: 8px;
+      }
+
+      .admin-field--text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: #9c9c9c;
+      }
+
+      .admin-form__row--size2 {
+        background-color: transparent;
+        border: none;
+      }
+
+      .admin-form__row--size1 {
+        background-color: #fff;
+
+        .admin-field--has-error {
+        }
+      }
+    }
+  }
+}
+
+.upload-file-wrap {
+  .admin-button {
+    width: 399px;
+    height: 39px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 10px;
+    gap: 10px;
+    background-color: #fff;
+    color: #20315f;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    border: 1px solid #20315f;
+    border-radius: 30px;
+  }
+}
+
+.admin-dialog-footer-button {
+  .button {
+    &__cancle {
+      .admin-button--primary {
+        width: 148px;
+        background-color: #fff;
+        border: 1px solid #20315f;
+        color: #20315f;
+        border-radius: 30px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+
+    &__save {
+      .admin-button--primary {
+        width: 148px;
+        height: 39px;
+      }
+    }
+  }
+}

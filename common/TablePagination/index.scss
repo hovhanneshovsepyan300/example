@@ -1,0 +1,25 @@
+.table_pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & svg {
+        cursor: pointer
+    }
+}
+
+.pages_block {
+    display: flex;
+    margin: 0 10px;
+    user-select: none;
+}
+
+.page_item {
+    width: 25px;
+    height: 25px;
+    color: #B9B3B3;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

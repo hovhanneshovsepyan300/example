@@ -1,0 +1,61 @@
+.beacon-dialog {
+  &-buttoncontainer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 7px;
+    column-gap: 16px;
+    margin-top: 14px;
+    border-top: 1px solid #f1f0f0;
+
+    .admin-button {
+      &--primary {
+        width: 148px;
+        font-family: 'Poppins';
+        font-style: normal;
+        // font-weight: 500;
+        font-size: 17px;
+        line-height: 21px;
+      }
+    }
+  }
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__iconclose {
+      position: absolute;
+      top: 16px;
+      right: 15px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .admin-head {
+      width: 100%;
+      margin-bottom: 14px;
+    }
+  }
+}
+
+.beacon-dialog-modelwith {
+  padding: 16.5px 15px 15px 15px;
+  position: relative;
+
+  .beacon-dialog-title {
+    h1 {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 21px;
+      color: #20315f;
+      padding-bottom: 8px;
+    }
+  }
+
+  .admin-form {
+    padding: 0;
+  }
+}

@@ -1,0 +1,80 @@
+.additionalDocumentBackdrop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10
+}
+
+.dialogContainer {
+    background: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    z-index: 11;
+}
+
+.primary {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: 1px solid #F1F0F0;
+}
+
+.withTopHeader {
+    border-radius: 15px 0px 0px 18px !important;
+    -webkit-border-radius: 15px 0px 0px 18px !important;
+    -moz-border-radius: 15px 0px 0px 18px !important;
+    -ms-border-radius: 15px 0px 0px 18px !important;
+    -o-border-radius: 15px 0px 0px 18px !important;
+    border-top: 9px solid #20315F
+}
+
+.fullWidth {
+    width: 90vw !important;
+    height: 90vh !important;
+    padding: 25px;
+}
+
+.dialogTitle {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #20315F;
+    font-size: calc(10px + 1.6vmin);
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #20315F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeIconContainer {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.closeIcon {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogActions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px
+}

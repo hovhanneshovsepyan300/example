@@ -1,0 +1,74 @@
+.textInputItemRoot {
+  width: 100%;
+  //   height: 100%;
+  border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px 8px 0 0;
+  -moz-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #20315f;
+  background: #eaedee;
+  padding: 10px 8px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.withErrorTextItemRoot {
+  border: 2px solid red !important;
+  transition: all 0.3s, border 0.1s;
+  -webkit-transition: all 0.3s, border 0.1s;
+  -moz-transition: all 0.3s, border 0.1s;
+  -ms-transition: all 0.3s, border 0.1s;
+  -o-transition: all 0.3s, border 0.1s;
+}
+
+.withErrorTextItemRoot > p + input {
+  color: red;
+}
+
+.label {
+  line-height: 1;
+  font-size: 15px;
+  color: #b9b3b3;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.withErrorLabel {
+  color: red;
+  margin-left: 5px;
+}
+
+input[type='text'],
+input[type='email'] {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font-size: 17px;
+  box-sizing: border-box;
+  background: transparent;
+  color: #20315f;
+
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.endAdornment {
+  position: absolute;
+  top: 60%;
+  left: calc(100% - 10px);
+  transform: translate(-105%, -60%);
+  -webkit-transform: translate(-105%, -60%);
+  -moz-transform: translate(-105%, -60%);
+  -ms-transform: translate(-105%, -60%);
+  -o-transform: translate(-105%, -60%);
+}

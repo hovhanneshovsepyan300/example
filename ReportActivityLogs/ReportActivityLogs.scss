@@ -1,0 +1,10 @@
+.ActivityLogs {
+  table tr {
+    page-break-inside: avoid;
+  }
+
+  td,
+  th {
+    padding: 2px 10px;
+  }
+}

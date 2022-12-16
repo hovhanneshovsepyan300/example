@@ -1,0 +1,49 @@
+.action_btn {
+    width: 100%;
+    // height: 100%;
+    min-width: 148px;
+    height: 39px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 0;
+    font-weight: 500;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > svg {
+        width: 22px;
+        height: auto;
+        margin-right: 3px;
+      }
+}
+
+.primary {
+    background-color: #20315f !important;
+    color: white;
+}
+
+.secondary {
+    background: #EEF2F3;
+    color: #20315F
+}
+
+.outlined {
+    border: 1px solid #20315f;
+    background-color: white;
+    color: #20315f;
+}
+
+.grey {
+    background: none;
+    color: #b9b3b3;
+    border: 1px solid #b9b3b3;
+
+    & svg * {
+        fill: #b9b3b3 !important
+    }
+}
